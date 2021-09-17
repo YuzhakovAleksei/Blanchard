@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanchard</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body aria-label="тело сайта">
+  <!-- header -->
+  <header aria-label="меню навигации" class="header">
+    <div class="header-container">
+      <a class="logo">
+        <img src="img/LogoTopPart.svg" alt="" class="logo-img">
+        <img src="img/LogoBotPart.svg" alt="" class="logo-img">
+      </a>
+      <ul class="nav-list">
+        <li id="nav_1" class="nav-item">
+          <a href="#" aria-labelledby="nav_1" class="menu-text nav-link">О нас</a>
+        </li>
+        <li id="nav_2" class="nav-item">
+          <a href="#" aria-labelledby="nav_2" class="menu-text nav-link">Галерея</a>
+        </li>
+        <li id="nav_3" class="nav-item">
+          <a href="#" aria-labelledby="nav_3" class="menu-text nav-link">Каталог</a>
+        </li>
+        <li id="nav_4" class="nav-item">
+          <a href="#" aria-labelledby="nav_4" class="menu-text nav-link">События</a>
+        </li>
+        <li id="nav_5" class="nav-item">
+          <a href="#" aria-labelledby="nav_5" class="menu-text nav-link">Издания</a>
+        </li>
+        <li id="nav_6" class="nav-item">
+          <a href="#" aria-labelledby="nav_6" class="menu-text nav-link">Проекты</a>
+        </li>
+        <li id="nav_7" class="nav-item">
+          <a href="#" aria-labelledby="nav_7" class="menu-text nav-link">Контакты</a>
+        </li>
+      </ul>
+      <a href="" aria-label="кнопка войти">
+        <img src="img/icons/Enter_Icon.svg" alt="" class="enter-icon">
+        <span class="enter-text">Войти</span>
+      </a>
+    </div>
+    <menu class="menu">
+      <div class="menu__item">
+        <div class="menu__header">
+          <a class="menu-text menu__block-name">Реализм</a>
+          <span class="menu__arrow"></span>
+        </div>
+        <ul data-simplebar class="menu__items-block">
+          <li class="menu-item">
+            <a href="" class="menu-text menu-icon-img">Веккьетта</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-text menu-icon-img">Фридрих</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-text menu-icon-img">Леонардо</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-text menu-icon-img">Ворроккью</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-text menu-icon-img">Тинторетто</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-text menu-icon-img">Бенедетто</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-text menu-icon-img">Бонсиньори</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu__item">
+        <div class="menu__header">
+          <a class="menu-text menu__block-name">Импрессионизм</a>
+          <span class="menu__arrow"></span>
+        </div>
+        <ul data-simplebar class="menu__items-block">
+          <li class="menu-item">
+            <a href="" class="menu-text menu-icon-img">Веккьетта</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-text menu-icon-img">Фридрих</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-text menu-icon-img">Леонардо</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-text menu-icon-img">Ворроккью</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-text menu-icon-img">Тинторетто</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-text menu-icon-img">Бенедетто</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-text menu-icon-img">Бонсиньори</a>
+          </li>
+        </ul>
+      </div>
+      <div class="search__block">
+        <input type="text" placeholder="Поиск">
+      </div>
+    </menu>
+  </header>
+  <main aria-label="основная секция">
+
+    <!---------------------- Hero ------------------------>
+
+    <section>
+      <div class="container hero__container">
+        <div class="slider__wrapper">
+          <!-- <h1>Слайдер Swiper</h1> -->
+          <div class="pagination-place"></div>
+          <div class="image-slider swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="image-frame swiper-slide">
+                <div class="picture-container">
+                  <img src="img/Main_gallery/GrayFrame.png" alt="">
+                </div>
+              </div>
+              <div class="image-frame swiper-slide">
+                <div class="picture-container">
+                  <img src="img/Main_gallery/Main_tetiva_01.jpg" alt="">
+                </div>
+              </div>
+              <div class="image-frame swiper-slide">
+                <div class="picture-container">
+                  <img src="img/Main_gallery/Main_Monocosour_01.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+        </div>
+        <h1 class="main_heading">Прикоснитесь к прекрасному</h1>
+        <p class="hero-description">
+          Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+        </p>
+        <button href="#" class="btn btn-section-hero">
+          Подписаться на рассылку
+        </button>
+      </div>
+    </section>
+
+    <!-------------------- About ------------------------>
+
+    <section>
+      <div class="container about__container">
+        <h2 class="section__heading">О нас</h2>
+        <p class="text-description gallery__description">
+          Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+        </p>
+      </div>
+    </section>
+
+    <!-------------------- Gallery ------------------------>
+
+    <section>
+      <div class="container gallery__container">
+        <h2 class="section__heading">Галерея</h2>
+        <div class="block-select">
+          <span>Фильтр:</span>
+          <select name="select" id="select">
+            <option value="1">Материал</option>
+            <option value="2">Древесина</option>
+            <option value="3">Металл</option>
+          </select>
+
+           <!-- Include Choices JavaScript -->
+          <script src="js/choices.min.js"></script>
+          <script>
+            const element = document.querySelector('#select');
+            const choices = new Choices(element, {
+              placeholder: true,
+              // placeholderValue: 'Материал',
+              searchEnabled: false,
+            });
+          </script>
+          <link rel="stylesheet" href="css/choices-blanchard.css">
+        </div>
+        <div class="slider__container">
+          <div class="swiper__control-block">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="image-frame swiper-slide">
+              <div class="picture-container">
+                <img src="img/gallery/Gallery_x3_1.jpg" alt="">
+              </div>
+            </div>
+            <div class="image-frame swiper-slide">
+              <div class="picture-container">
+                <img src="img/gallery/Gallery_x3_2.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="text-description gallery__description">
+          <p>
+            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="" class="link-in-text">авторизуйтесь</a> авторизуйтесь, либо воспользуйтесь лицензией.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------- Catalog ------------------------>
+
+    <section>
+      <div class="container catalog__container">
+        <h2 class="section__heading">Каталог</h2>
+        <ul class="language__list">
+          <li>
+            <img src="img/icons/FR.png" alt="">
+          </li>
+          <li>
+            <img src="img/icons/GM.png" alt="">
+          </li>
+          <li>
+            <img src="img/icons/IT.png" alt="">
+          </li>
+          <li>
+            <img src="img/icons/RU.png" alt="">
+          </li>
+          <li>
+            <img src="img/icons/BL.png" alt="">
+          </li>
+        </ul>
+        <p class="text-description catalog-description">
+          Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+        </p>
+        <div class="years__wrap">
+          <div class="artist__block">
+            <div id="domenico" class="artist__info">
+              <img src="img/catalog/Domenico.jpg" alt="">
+            </div>
+          </div>
+          <div class="years__block">
+            <div id="accordion" aria-label="группа" class="years__accordion">
+
+              <!-- accordion volume 1 -->
+
+              <h3 id="volume1" aria-label="C 1400 по 1499 гг.">
+                <div aria-labelledby="volume1"  class="years-item">
+                  <div class="h3-text volume-heading">
+                    C 1400 по 1499 гг.
+                  </div>
+                  <div href="#" class="volume-icon"></div>
+                </div>
+              </h3>
+              <div id="list1" aria-label="список художников" class="artist-list__container">
+                <ul class="artist-list">
+                  <li>
+                    <a href="" id="benedetto">Бенедетто ди Биндо</a>
+                  </li>
+                  <li>
+                    <a href="" id="bergonione">Бергоньоне, Амброджо</a>
+                  </li>
+                  <li>
+                    <a href="" id="bissolo">Биссоло, Франческо</a>
+                  </li>
+                  <li>
+                    <a href="" id="boltraffio">Больтраффио, Джованни</a>
+                  </li>
+                  <li>
+                    <a href="" id="bonsinori">Бонсиньори, Франческо</a>
+                  </li>
+                  <li>
+                    <a href="" id="bottichini">Боттичини, Рафаэлло</a>
+                  </li>
+                  <li>
+                    <a href="" id="bramantino">Брамантино</a>
+                  </li>
+                  <li>
+                    <a href="" id="brea">Бреа, Людовико</a>
+                  </li>
+                  <li>
+                    <a href="" id="biadjo">Бьяджо д’Антонио Туччи</a>
+                  </li>
+                  <li>
+                    <a href="" id="vekketta">Веккьетта</a>
+                  </li>
+                  <li>
+                    <a href="" id="andrea">Андреа Верроккьо</a>
+                  </li>
+                  <li>
+                    <a href="#domenico" >Доменико Гирландайо</a>
+                  </li>
+                  <li>
+                    <a href="" id="benozzo">Беноццо Гоццоли</a>
+                  </li>
+                  <li>
+                    <a href="" id="granacci">Граначчи, Франческо</a>
+                  </li>
+                  <li>
+                    <a href="" id="gregorio">Грегорио ди Чекко</a>
+                  </li>
+                  <li>
+                    <a href="" id="djovanni-di-udine">Джованни да Удине</a>
+                  </li>
+                  <li>
+                    <a href="" id="djovanni-di-paolo">Джованни ди Паоло</a>
+                  </li>
+                  <li>
+                    <a href="" id="djordjone">Джорджоне</a>
+                  </li>
+                  <li>
+                    <a href="" id="perentino">Парентино, Бернардо</a>
+                  </li>
+                  <li>
+                    <a href="" id="pezellino">Пезеллино</a>
+                  </li>
+                  <li>
+                    <a href="" id="pietro">Пьетро Перуджино</a>
+                  </li>
+                  <li>
+                    <a href="" id="peruzzi">Перуцци, Бальдассаре</a>
+                  </li>
+                  <li>
+                    <a href="" id="pizzanello">Пизанелло</a>
+                  </li>
+                  <li>
+                    <a href="" id="pinturikkio">Пинтуриккьо</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- accordion volume 2 -->
+
+              <h3 id="volume2" aria-label="C 1500 по 1599 гг.">
+                <div aria-labelledby="volume1"  class="years-item">
+                  <div class="h3-text volume-heading">
+                    C 1500 по 1599 гг.
+                  </div>
+                  <div href="#" class="volume-icon"></div>
+                </div>
+              </h3>
+              <div id="list2" aria-label="список художников" class="artist-list__container">
+                <div class="empty-frame"></div>
+                <span class="h3-text">Здесь пока пусто</span>
+                <span>А в галерее вы всегда можете найти что-то интересное для себя</span>
+                <a href="" >В галерею</a>
+              </div>
+
+              <!-- accordion volume 3 -->
+
+              <h3 id="volume3" aria-label="C 1600 по 1699 гг.">
+                <div aria-labelledby="volume1"  class="years-item">
+                  <div class="h3-text volume-heading">
+                    C 1600 по 1699 гг.
+                  </div>
+                  <div href="#" class="volume-icon"></div>
+                </div>
+              </h3>
+              <div id="list3" aria-label="список художников" class="artist-list__container">
+                <div class="empty-frame"></div>
+                <span class="h3-text">Здесь пока пусто</span>
+                <span>А в галерее вы всегда можете найти что-то интересное для себя</span>
+                <a href="" >В галерею</a>
+              </div>
+
+              <!-- accordion volume 4 -->
+
+              <h3 id="volume4" aria-label="C 1700 по 1799 гг.">
+                <div aria-labelledby="volume1"  class="years-item">
+                  <div class="h3-text volume-heading">
+                    C 1700 по 1799 гг.
+                  </div>
+                  <div href="#" class="volume-icon"></div>
+                </div>
+              </h3>
+              <div id="list4" aria-label="список художников" class="artist-list__container">
+                <div class="empty-frame"></div>
+                <span class="h3-text">Здесь пока пусто</span>
+                <span>А в галерее вы всегда можете найти что-то интересное для себя</span>
+                <a href="" >В галерею</a>
+              </div>
+
+              <!-- accordion volume 5 -->
+
+              <h3 id="volume5" aria-label="C 1800 по 1899 гг.">
+                <div aria-labelledby="volume1"  class="years-item">
+                  <div class="h3-text volume-heading">
+                    C 1800 по 1899 гг.
+                  </div>
+                  <div href="#" class="volume-icon"></div>
+                </div>
+              </h3>
+              <div id="list5" aria-label="список художников" class="artist-list__container">
+                <div class="empty-frame"></div>
+                <span class="h3-text">Здесь пока пусто</span>
+                <span>А в галерее вы всегда можете найти что-то интересное для себя</span>
+                <a href="" >В галерею</a>
+              </div>
+
+              <!-- accordion volume 6 -->
+
+              <h3 id="volume6" aria-label="C 1900 по 1999 гг.">
+                <div aria-labelledby="volume1"  class="years-item">
+                  <div class="h3-text volume-heading">
+                    C 1900 по 1999 гг.
+                  </div>
+                  <div href="#" class="volume-icon"></div>
+                </div>
+              </h3>
+              <div id="list6" aria-label="список художников" class="artist-list__container">
+                <div class="empty-frame"></div>
+                <span class="h3-text">Здесь пока пусто</span>
+                <span>А в галерее вы всегда можете найти что-то интересное для себя</span>
+                <a href="" >В галерею</a>
+              </div>
+
+              <!-- accordion volume 7 -->
+
+              <h3 id="volume7" aria-label="C 2000 г.">
+                <div aria-labelledby="volume1"  class="years-item">
+                  <div class="h3-text volume-heading">
+                    C 2000 г.
+                  </div>
+                  <div href="#" class="volume-icon"></div>
+                </div>
+              </h3>
+              <div id="list7" aria-label="список художников" class="artist-list__container">
+                <div class="empty-frame"></div>
+                <span class="h3-text">Здесь пока пусто</span>
+                <span>А в галерее вы всегда можете найти что-то интересное для себя</span>
+                <a href="" >В галерею</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
