@@ -5,111 +5,85 @@
   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/simplebar.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/simplebar.min.js"></script>
 </head>
 <body aria-label="тело сайта">
   <!-- header -->
   <header aria-label="меню навигации" class="header">
     <div class="header-container">
-      <a class="logo">
-        <img src="img/LogoTopPart.svg" alt="" class="logo-img">
-        <img src="img/LogoBotPart.svg" alt="" class="logo-img">
-      </a>
-      <ul class="nav-list">
-        <li id="nav_1" class="nav-item">
-          <a href="#" aria-labelledby="nav_1" class="menu-text nav-link">О нас</a>
-        </li>
-        <li id="nav_2" class="nav-item">
-          <a href="#" aria-labelledby="nav_2" class="menu-text nav-link">Галерея</a>
-        </li>
-        <li id="nav_3" class="nav-item">
-          <a href="#" aria-labelledby="nav_3" class="menu-text nav-link">Каталог</a>
-        </li>
-        <li id="nav_4" class="nav-item">
-          <a href="#" aria-labelledby="nav_4" class="menu-text nav-link">События</a>
-        </li>
-        <li id="nav_5" class="nav-item">
-          <a href="#" aria-labelledby="nav_5" class="menu-text nav-link">Издания</a>
-        </li>
-        <li id="nav_6" class="nav-item">
-          <a href="#" aria-labelledby="nav_6" class="menu-text nav-link">Проекты</a>
-        </li>
-        <li id="nav_7" class="nav-item">
-          <a href="#" aria-labelledby="nav_7" class="menu-text nav-link">Контакты</a>
-        </li>
-      </ul>
-      <a href="" aria-label="кнопка войти">
-        <img src="img/icons/Enter_Icon.svg" alt="" class="enter-icon">
-        <span class="enter-text">Войти</span>
-      </a>
+      <nav class="navigation__menu">
+        <a class="logo">
+          <img src="img/LogoTopPart.svg" alt="" class="logo-img">
+          <img src="img/LogoBotPart.svg" alt="" class="logo-img">
+        </a>
+        <ul class="nav-list">
+          <li id="nav_1" class="nav-item">
+            <a href="#" aria-labelledby="nav_1" class="menu-text nav-link">О нас</a>
+          </li>
+          <li id="nav_2" class="nav-item">
+            <a href="#" aria-labelledby="nav_2" class="menu-text nav-link">Галерея</a>
+          </li>
+          <li id="nav_3" class="nav-item">
+            <a href="#" aria-labelledby="nav_3" class="menu-text nav-link">Каталог</a>
+          </li>
+          <li id="nav_4" class="nav-item">
+            <a href="#" aria-labelledby="nav_4" class="menu-text nav-link">События</a>
+          </li>
+          <li id="nav_5" class="nav-item">
+            <a href="#" aria-labelledby="nav_5" class="menu-text nav-link">Издания</a>
+          </li>
+          <li id="nav_6" class="nav-item">
+            <a href="#" aria-labelledby="nav_6" class="menu-text nav-link">Проекты</a>
+          </li>
+          <li id="nav_7" class="nav-item">
+            <a href="#" aria-labelledby="nav_7" class="menu-text nav-link">Контакты</a>
+          </li>
+        </ul>
+        <a href="" aria-label="кнопка войти">
+          <img src="img/icons/Enter_Icon.svg" alt="" class="enter-icon">
+          <span class="enter-text">Войти</span>
+        </a>
+      </nav>
+      <menu class="menu">
+        <div class="menu__item">
+          <select class="type-of-art" name="select" id="select">
+            <option value="">Реализм</option>
+            <option value="1">Веккьетта</option>
+            <option value="2">Фридрих</option>
+            <option value="3">Леонардо</option>
+            <option value="4">Ворроккью</option>
+            <option value="5">Тинторетто</option>
+            <option value="6">Бенедетто</option>
+            <option value="6">Бонсиньори</option>
+          </select>
+        </div>
+        <div class="menu__item menu-two">
+          <select class="type-of-art2" name="select" id="select2">
+            <option value="">Импрессионизм</option>
+            <option value="1">Веккьетта</option>
+            <option value="2"> <a href="" class="type-of" >Фридрих</a> </option>
+            <option value="3" class="type-a" >Леонардо</option>
+            <option value="4">Ворроккью</option>
+            <option value="5">Тинторетто</option>
+            <option value="6">Бенедетто</option>
+            <option value="6">Бонсиньори</option>
+          </select>
+        </div>
+        <div class="search__block">
+          <input type="text" placeholder="Поиск">
+        </div>
+      </menu>
     </div>
-    <menu class="menu">
-      <div class="menu__item">
-        <div class="menu__header">
-          <a class="menu-text menu__block-name">Реализм</a>
-          <span class="menu__arrow"></span>
-        </div>
-        <ul data-simplebar class="menu__items-block">
-          <li class="menu-item">
-            <a href="" class="menu-text menu-icon-img">Веккьетта</a>
-          </li>
-          <li class="menu-item">
-            <a href="" class="menu-text menu-icon-img">Фридрих</a>
-          </li>
-          <li class="menu-item">
-            <a href="" class="menu-text menu-icon-img">Леонардо</a>
-          </li>
-          <li class="menu-item">
-            <a href="" class="menu-text menu-icon-img">Ворроккью</a>
-          </li>
-          <li class="menu-item">
-            <a href="" class="menu-text menu-icon-img">Тинторетто</a>
-          </li>
-          <li class="menu-item">
-            <a href="" class="menu-text menu-icon-img">Бенедетто</a>
-          </li>
-          <li class="menu-item">
-            <a href="" class="menu-text menu-icon-img">Бонсиньори</a>
-          </li>
-        </ul>
-      </div>
-      <div class="menu__item">
-        <div class="menu__header">
-          <a class="menu-text menu__block-name">Импрессионизм</a>
-          <span class="menu__arrow"></span>
-        </div>
-        <ul data-simplebar class="menu__items-block">
-          <li class="menu-item">
-            <a href="" class="menu-text menu-icon-img">Веккьетта</a>
-          </li>
-          <li class="menu-item">
-            <a href="" class="menu-text menu-icon-img">Фридрих</a>
-          </li>
-          <li class="menu-item">
-            <a href="" class="menu-text menu-icon-img">Леонардо</a>
-          </li>
-          <li class="menu-item">
-            <a href="" class="menu-text menu-icon-img">Ворроккью</a>
-          </li>
-          <li class="menu-item">
-            <a href="" class="menu-text menu-icon-img">Тинторетто</a>
-          </li>
-          <li class="menu-item">
-            <a href="" class="menu-text menu-icon-img">Бенедетто</a>
-          </li>
-          <li class="menu-item">
-            <a href="" class="menu-text menu-icon-img">Бонсиньори</a>
-          </li>
-        </ul>
-      </div>
-      <div class="search__block">
-        <input type="text" placeholder="Поиск">
-      </div>
-    </menu>
   </header>
   <main aria-label="основная секция">
 
@@ -126,17 +100,17 @@
               <!-- Slides -->
               <div class="image-frame swiper-slide">
                 <div class="picture-container">
-                  <img src="img/Main_gallery/GrayFrame.png" alt="">
+                  <img src="img/hero/birmingham-museums-trust-MK_98NuC4-4-unsplash1.png" alt="">
                 </div>
               </div>
               <div class="image-frame swiper-slide">
                 <div class="picture-container">
-                  <img src="img/Main_gallery/Main_tetiva_01.jpg" alt="">
+                  <img src="img/hero/birmingham-museums-trust-MK_98NuC4-4-unsplash2.jpg" alt="">
                 </div>
               </div>
               <div class="image-frame swiper-slide">
                 <div class="picture-container">
-                  <img src="img/Main_gallery/Main_Monocosour_01.jpg" alt="">
+                  <img src="img/hero/birmingham-museums-trust-MK_98NuC4-4-unsplash3.png" alt="">
                 </div>
               </div>
             </div>
@@ -151,13 +125,15 @@
             <!-- <div class="swiper-scrollbar"></div> -->
           </div>
         </div>
-        <h1 class="main_heading">Прикоснитесь к прекрасному</h1>
-        <p class="hero-description">
-          Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
-        </p>
-        <button href="#" class="btn btn-section-hero">
-          Подписаться на рассылку
-        </button>
+          <div class="heading__wrapper">
+            <h1 class="main_heading">Прикоснитесь<br>к прекрасному</h1>
+            <p class="hero-description">
+              Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+            </p>
+            <button href="#" class="btn btn-section-hero">
+              Подписаться на рассылку
+            </button>
+          </div>
       </div>
     </section>
 
@@ -176,52 +152,78 @@
 
     <section>
       <div class="container gallery__container">
-        <h2 class="section__heading">Галерея</h2>
-        <div class="block-select">
-          <span>Фильтр:</span>
-          <select name="select" id="select">
-            <option value="1">Материал</option>
-            <option value="2">Древесина</option>
-            <option value="3">Металл</option>
-          </select>
-
-           <!-- Include Choices JavaScript -->
-          <script src="js/choices.min.js"></script>
-          <script>
-            const element = document.querySelector('#select');
-            const choices = new Choices(element, {
-              placeholder: true,
-              // placeholderValue: 'Материал',
-              searchEnabled: false,
-            });
-          </script>
-          <link rel="stylesheet" href="css/choices-blanchard.css">
-        </div>
-        <div class="slider__container">
-          <div class="swiper__control-block">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="image-frame swiper-slide">
-              <div class="picture-container">
-                <img src="img/gallery/Gallery_x3_1.jpg" alt="">
-              </div>
+        <div class="gallery-main-block">
+          <div class="filter__block">
+            <h2 class="section__heading gallery_heading">Галерея</h2>
+            <div class="gallery_download">
+              <p>
+                Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="">авторизуйтесь</a>, либо воспользуйтесь лицензией.
+              </p>
             </div>
-            <div class="image-frame swiper-slide">
-              <div class="picture-container">
-                <img src="img/gallery/Gallery_x3_2.jpg" alt="">
-              </div>
-            </div>
-
           </div>
-        </div>
-        <div class="text-description gallery__description">
-          <p>
-            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="" class="link-in-text">авторизуйтесь</a> авторизуйтесь, либо воспользуйтесь лицензией.
-          </p>
+          <div class="gallery__block">
+            <div class="pagination-place"></div>
+            <div class="gallery-slider swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="gallery_wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide gallery-slide">
+                  <div class="gallery-img-container">
+                    <img src="img/gallery/Gallery_x3_1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide gallery-slide">
+                  <div class="gallery-img-container">
+                    <img src="img/gallery/Gallery_x3_11.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide gallery-slide">
+                  <div class="gallery-img-container">
+                    <img src="img/gallery/Gallery_x3_12.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide gallery-slide">
+                  <div class="gallery-img-container">
+                    <img src="img/gallery/Gallery_x3_1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide gallery-slide">
+                  <div class="gallery-img-container">
+                    <img src="img/gallery/Gallery_x3_11.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide gallery-slide">
+                  <div class="gallery-img-container">
+                    <img src="img/gallery/Gallery_x3_12.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide gallery-slide">
+                  <div class="gallery-img-container">
+                    <img src="img/gallery/Gallery_x3_1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide gallery-slide">
+                  <div class="gallery-img-container">
+                    <img src="img/gallery/Gallery_x3_11.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide gallery-slide">
+                  <div class="gallery-img-container">
+                    <img src="img/gallery/Gallery_x3_12.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -230,28 +232,58 @@
 
     <section>
       <div class="container catalog__container">
-        <h2 class="section__heading">Каталог</h2>
-        <ul class="language__list">
-          <li>
-            <img src="img/icons/FR.png" alt="">
-          </li>
-          <li>
-            <img src="img/icons/GM.png" alt="">
-          </li>
-          <li>
-            <img src="img/icons/IT.png" alt="">
-          </li>
-          <li>
-            <img src="img/icons/RU.png" alt="">
-          </li>
-          <li>
-            <img src="img/icons/BL.png" alt="">
-          </li>
-        </ul>
+        <div class="catalog__header">
+          <div class="catalog_name__block">
+            <h2 class="section__heading">Каталог</h2>
+          </div>
+          <ul class="language__list">
+            <li>
+              <img src="img/icons/FR.png" alt="">
+            </li>
+            <li>
+              <img src="img/icons/GM.png" alt="">
+            </li>
+            <li>
+              <img src="img/icons/IT.png" alt="">
+            </li>
+            <li>
+              <img src="img/icons/RU.png" alt="">
+            </li>
+            <li>
+              <img src="img/icons/BL.png" alt="">
+            </li>
+          </ul>
+        </div>
         <p class="text-description catalog-description">
           Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
         </p>
-        <div class="years__wrap">
+        <div class="demo_jquery">
+          <div id="accordion">
+            <h3>Section 1</h3>
+            <div>
+              <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+            </div>
+            <h3>Section 2</h3>
+            <div>
+              <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+            </div>
+            <h3>Section 3</h3>
+            <div>
+              <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+              <img src="/img/gallery/Gallery_x3_15.jpg" alt="">
+              <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+              </ul>
+            </div>
+            <h3>Section 4</h3>
+            <div>
+              <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__accordion-block">
           <div class="artist__block">
             <div id="domenico" class="artist__info">
               <img src="img/catalog/Domenico.jpg" alt="">
@@ -264,7 +296,7 @@
 
               <h3 id="volume1" aria-label="C 1400 по 1499 гг.">
                 <div aria-labelledby="volume1"  class="years-item">
-                  <div class="h3-text volume-heading">
+                  <div class="item-heading volume-heading">
                     C 1400 по 1499 гг.
                   </div>
                   <div href="#" class="volume-icon"></div>
@@ -456,8 +488,107 @@
       </div>
     </section>
 
+    <!--------------------- Events ------------------------>
+
+    <section>
+      <div class="container events__container">
+        <h2 class="section__heading events-heading">События</h2>
+        <div class="events__card-container">
+
+          <!--  events card 1 -->
+
+          <div id="events-card-item1" class="events-card-item">
+            <div class="events-card__image-block">
+              <img src="/img/events/Events_1.jpg" alt="card image">
+            </div>
+            <div class="events-card__info-block">
+              <div class="events-card__meta">
+                <div>Музей им. Щусева</div>
+                <div>с 20 марта по 30 апреля</div>
+              </div>
+              <h3 class="item-heading card-heading">Книжная гравюра в живом восприятии</h3>
+              <p class="text-description events-card__description">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+              <a href="" class="events-card__more-details">Подробнее </a>
+            </div>
+          </div>
+
+          <!--  events card 2 -->
+
+          <div id="events-card-item2" class="events-card-item">
+            <div class="events-card__image-block">
+              <img src="/img/events/Events_2.jpg" alt="card image">
+            </div>
+            <div class="events-card__info-block">
+              <div class="events-card__meta">
+                <div>ММОМА</div>
+                <div>24 марта 19:00</div>
+              </div>
+              <h3 class="item-heading card-heading">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+              <p class="text-description events-card__description">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+              <a href="" class="events-card__more-details">Подробнее </a>
+            </div>
+          </div>
+
+          <!--  events card 3 -->
+
+          <div id="events-card-item3" class="events-card-item">
+            <div class="events-card__image-block">
+              <img src="/img/events/Events_3.jpg" alt="card image">
+            </div>
+            <div class="events-card__info-block">
+              <div class="events-card__meta">
+                <div>Еврейский музей</div>
+                <div>с 31 марта по 21 апреля</div>
+              </div>
+              <h3 class="item-heading card-heading">Выставка «Формация 2020»</h3>
+              <p class="text-description events-card__description">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+              <a href="" class="events-card__more-details">Подробнее </a>
+            </div>
+          </div>
+
+          <!--  events card 4 -->
+
+          <div id="events-card-item4" class="events-card-item">
+            <div class="events-card__image-block">
+              <img src="/img/events/Events_4.jpg" alt="card image">
+            </div>
+            <div class="events-card__info-block">
+              <div class="events-card__meta">
+                <div>Еврейский музей</div>
+                <div>с 31 марта по 21 апреля</div>
+              </div>
+              <h3 class="item-heading card-heading">Выставка «Формация 2020»</h3>
+              <p class="text-description events-card__description">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+              <a href="" class="events-card__more-details">Подробнее </a>
+            </div>
+          </div>
+
+          <!--  events card 5 -->
+
+          <div id="events-card-item5" class="events-card-item">
+            <div class="events-card__image-block">
+              <img src="/img/events/Events_5.jpg" alt="card image">
+            </div>
+            <div class="events-card__info-block">
+              <div class="events-card__meta">
+                <div>Еврейский музей</div>
+                <div>с 31 марта по 21 апреля</div>
+              </div>
+              <h3 class="item-heading card-heading">Выставка «Формация 2020»</h3>
+              <p class="text-description events-card__description">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+              <a href="" class="events-card__more-details">Подробнее </a>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-event">Все события</button>
+
+      </div>
+    </section>
+
   </main>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/choices.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
