@@ -379,6 +379,12 @@ section {
 
 }
 
+.white-description {
+  font-size: 16px;
+  color: #fff;
+  line-height: 21.79px;
+}
+
 .gallery-slide {
   height: 400px;
 }
@@ -477,6 +483,52 @@ section {
 #events-card-item5 {
   display: none;
 }
+
+/* -------------- Editions -------------- */
+
+.editions__container {
+  background-image: url(../img/editions/Editions_BKG.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.editions-heading {
+  color: #fff;
+}
+
+.editions__slider-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.editions__card-item {
+  width: 350px;
+}
+
+.editions__card-data {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 23px 0;
+}
+
+.editions_card-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21.79px;
+}
+
+.editions_price-style {
+  font-style: italic;
+}
+
+.editions__card-btn {
+  color: #fff;
+  font-size: 16px;
+  width: 120px;
+  height: 40px;
+  padding-bottom: 4px;
+}
+
 
 
 
